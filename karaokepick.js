@@ -1,0 +1,1 @@
+document.getElementById("confirm").innerHTML = SongName & ", " & ArtistName

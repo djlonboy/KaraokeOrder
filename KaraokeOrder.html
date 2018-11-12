@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Karaoke Order</title>
+  <meta name="description" content="Order Karaoke Tracks">
+  <meta name="author" content="Distinction DJ & Audio">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+
+Hello. Please place an order for a track:
+
+<form id="KaraokeInfo" action="karaokepick.js">
+  Your Name: <input type="text" name="formResults.custName"><br>
+  Song Title: <input type="text" name="formResults.songName"><br>
+  Artist Name: <input type="text" name="formResults.artistName"><br><br>
+  <input type="button" onclick="KaraokeChoose(formResults)" value="Submit">
+</form>
+
+<p id="ShowInput"></p>
+
+<script>
+
+//function greeting (obj) {
+//    alert('Hello ' + obj.first + ' ' + obj.last);
+//}
+//var nameObject = {
+//    first: 'Joe',
+//    last: 'Schmoe'
+//};
+//greeting(nameObject);  // Hello Joe Schmoe
+
+function KaraokeChoose(formResults) {
+  document.getElementById("ShowInput").innerHTML = "Test: " + formResults.custName + formResults.songName + formResults.artistName;
+}
+</script>
+
+</body>
+</html>
